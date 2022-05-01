@@ -26,6 +26,7 @@ export class AxiosApi implements IRestApiClient {
       return Result.fail(error);
     }
   }
+
   async put(id: string, request: ApiRequest): Promise<Result<unknown>> {
     try {
       const url = `${this.url}/${id}`;
@@ -37,6 +38,7 @@ export class AxiosApi implements IRestApiClient {
       return Result.fail(error);
     }
   }
+
   async patch(id: string, request: ApiRequest): Promise<Result<unknown>> {
     try {
       const url = `${this.url}/${id}`;
