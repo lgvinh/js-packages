@@ -1,5 +1,5 @@
-import { QueryParams } from "../dtos/query.params";
-import { Result } from "../util-types/result";
+import { QueryParams } from '../dtos/query.params';
+import { Result } from '../util-types/result';
 
 export interface ApiOptions {
   headers: Record<string, string>;
