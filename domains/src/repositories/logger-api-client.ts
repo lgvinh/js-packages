@@ -1,7 +1,7 @@
 export interface ILoggerApiClient {
-  debug(message: string, obj: object, ...args: any[]): void;
-  info(message: string, obj: object, ...args: any[]): void;
-  trace(message: string, obj: object, ...args: any[]): void;
-  warn(message: string, obj: object, ...args: any[]): void;
-  error(message: string, obj: object, ...args: any[]): void;
+  debug(message: string, obj?: unknown, ...args: unknown[]): void;
+  info(message: string, obj?: unknown, ...args: unknown[]): void;
+  trace(message: string, obj?: unknown, ...args: unknown[]): void;
+  warn(message: string, obj?: unknown, ...args: unknown[]): void;
+  error(message: string, obj?: unknown, ...args: unknown[]): void;
 }

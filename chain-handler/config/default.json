@@ -1,0 +1,27 @@
+{
+  "pinoConfig": {
+    "transport": {
+      "target": "pino-pretty",
+      "options": {
+        "colorize": true,
+        "ignore": "pid,hostname",
+        "translateTime": "SYS:standard"
+      }
+    },
+    "customLevels": {
+      "trace": 10,
+      "debug": 20,
+      "info": 30,
+      "warn": 40,
+      "error": 50,
+      "fatal": 60
+    },
+    "useOnlyCustomLevels": true,
+    "level": "trace",
+    "name": "logger"
+  },
+  "loggerSensitiveKeywords": ["password"],
+  "loggerSensitiveKeywordReplacement": {
+    "password": "[...]"
+  }
+}

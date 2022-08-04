@@ -6,15 +6,15 @@ export interface ApiOptions {
   timeOut: number;
 }
 export interface ApiRequest {
-  body: any;
+  body: unknown;
   options?: ApiOptions;
 }
 
 export interface IRestApiClient {
-  post(request: ApiRequest): Promise<Result<any>>;
-  put(id: string, request: ApiRequest): Promise<Result<any>>;
-  patch(id: string, request: ApiRequest): Promise<Result<any>>;
-  findById(id: string, options?: ApiOptions): Promise<Result<any>>;
-  find(query: QueryParams, options?: ApiOptions): Promise<Result<any[]>>;
-  deleteById(id: string, option?: ApiOptions): Promise<Result<any>>;
+  post(request: ApiRequest): Promise<Result<unknown>>;
+  put(id: string, request: ApiRequest): Promise<Result<unknown>>;
+  patch(id: string, request: ApiRequest): Promise<Result<unknown>>;
+  findById(id: string, options?: ApiOptions): Promise<Result<unknown>>;
+  find(query: QueryParams, options?: ApiOptions): Promise<Result<unknown[]>>;
+  deleteById(id: string, option?: ApiOptions): Promise<Result<unknown>>;
 }
